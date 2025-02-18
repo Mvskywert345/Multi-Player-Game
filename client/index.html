@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Sci-Fi Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="h-screen flex items-center justify-center bg-black text-white">
+
+ <!-- Room ID Popup -->
+<!-- <div id="room-popup" class="hidden fixed inset-0 flex items-center justify-center bg-black/50">
+    <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center border border-purple-500">
+        <p class="text-xl">Your Room ID:</p>
+        <p id="room-id-text" class="text-2xl font-bold text-yellow-400 mt-2">DCHGSF</p>
+        <button onclick="copyRoomID()" class="copy-btn mt-4">📋 Copy</button>
+        <button onclick="closeRoomPopup()" class="close-btn mt-2">❌ Close</button>
+    </div>
+</div> -->
+
+    <!-- Main Menu -->
+    <div id="menu" class="flex flex-col items-center space-y-6 p-8 bg-gray-900/90 rounded-lg shadow-lg border border-purple-500">
+        <h1 class="text-6xl font-extrabold neon-text">ROCK PAPER SCISSORS</h1>
+        <button onclick="startFriendGame()" class="menu-btn">Create Room</button>
+        <button onclick="joinFriendGame()" class="menu-btn">Join Room</button>
+        <button onclick="startAIGame()" class="menu-btn">Play with AI</button>
+        <button onclick="findStranger()" class="menu-btn">Play with Stranger</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game" class="hidden flex flex-col items-center space-y-6 p-8 bg-gray-900/90 rounded-lg shadow-lg border border-blue-500">
+        <h2 class="text-4xl neon-text">Game Started!</h2>
+        <p id="your-move" class="text-2xl"></p>
+        <p id="opponent-move" class="text-xl text-gray-400">Waiting for opponent...</p>
+        <div class="flex space-x-6">
+            <button onclick="sendMove('rock')" class="move-btn">🪨 Rock</button>
+            <button onclick="sendMove('paper')" class="move-btn">📄 Paper</button>
+            <button onclick="sendMove('scissors')" class="move-btn">✂️ Scissors</button>
+        </div>
+        <p id="score" class="text-2xl font-bold">Score: You 0 - 0 Opponent</p>
+    </div>
+
+    <!-- AI Game Screen -->
+    <div id="ai-game" class="hidden flex flex-col items-center space-y-6 p-8 bg-gray-900/90 rounded-lg shadow-lg border border-green-500">
+        <h2 class="text-4xl neon-text">Playing Against AI</h2>
+        <p id="your-ai-move" class="text-2xl"></p>
+        <p id="ai-move" class="text-xl text-gray-400">Waiting for your move...</p>
+        <div class="flex space-x-6">
+            <button onclick="playWithAI('rock')" class="move-btn">🪨 Rock</button>
+            <button onclick="playWithAI('paper')" class="move-btn">📄 Paper</button>
+            <button onclick="playWithAI('scissors')" class="move-btn">✂️ Scissors</button>
+        </div>
+        <p id="score" class="text-2xl font-bold">Score: You 0 - 0 AI</p>
+    </div>
+
+    <style>
+        .neon-text {
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+        }
+        .menu-btn, .move-btn {
+            background: linear-gradient(to right, #ff00ff, #00ffff);
+            padding: 14px 28px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-btn:hover, .move-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 25px rgba(255, 0, 255, 1);
+        }
+    </style>
+</body>
+</html>

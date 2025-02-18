@@ -1,0 +1,267 @@
+/* Futuristic Sci-Fi Themed CSS */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: url('assets/3985.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#menu, #game, #ai-game {
+    background: rgba(255, 255, 255, 0.12); /* Light glass effect */
+    backdrop-filter: blur(5px); /* Smooth blur */
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.4); /* Softer glowing effect */
+    width: 95%;
+    max-width: 650px;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: url('assets/3985.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* 🚀 Hover effect for a glowing, depth feel */
+#menu:hover, #game:hover, #ai-game:hover {
+    background: rgba(255, 255, 255, 0.18); /* Slightly brighter */
+    box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.8); /* More glow */
+    transform: scale(1.02); /* Subtle zoom effect */
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-shadow: 0 0 10px cyan;
+    margin-bottom: 20px;
+}
+
+.menu-btn, .move-btn {
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.menu-btn {
+    background: linear-gradient(45deg, #ff0080, #8000ff);
+    box-shadow: 0px 5px 15px rgba(255, 0, 128, 0.6);
+    color: white;
+}
+
+.menu-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(255, 0, 128, 1);
+}
+
+.move-btn {
+    background: linear-gradient(45deg, #00ffcc, #0080ff);
+    box-shadow: 0px 5px 15px rgba(0, 255, 204, 0.6);
+    color: white;
+}
+
+.move-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(0, 255, 204, 1);
+}
+
+#score, #your-move, #opponent-move, #waitingMessage {
+    font-size: 2.0rem;
+    margin-top: 15px;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-weight: bold;
+}
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px cyan;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px cyan;
+}
+
+.menu-btn, .move-btn {
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.menu-btn {
+    background: linear-gradient(45deg, #ff0080, #8000ff);
+    box-shadow: 0px 5px 15px rgba(255, 0, 128, 0.6);
+    color: white;
+}
+
+.menu-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(255, 0, 128, 1);
+}
+
+.move-btn {
+    background: linear-gradient(45deg, #00ffcc, #0080ff);
+    box-shadow: 0px 5px 15px rgba(0, 255, 204, 0.6);
+    color: white;
+}
+
+.move-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(0, 255, 204, 1);
+}
+
+#score, #your-move, #opponent-move, #waitingMessage {
+    font-size: 2.0rem;
+    margin-top: 15px;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+/* Popup container styling with glassmorphism */
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.15); /* Light transparent background */
+    backdrop-filter: blur(15px); /* Blur effect */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    text-align: center;
+    width: 320px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🚀 Hover effect for popup */
+.popup-container:hover {
+    background: rgba(255, 255, 255, 0.25); /* More brightness */
+    backdrop-filter: blur(20px); /* Stronger blur */
+    -webkit-backdrop-filter: blur(20px);
+    transform: translate(-50%, -50%) scale(1.05); /* Slight zoom */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+}
+
+/* Heading styling */
+.popup-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Room ID Styling */
+.room-id {
+    font-size: 18px;
+    font-weight: bold;
+    color: yellow;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Button container */
+.popup-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Common button styling */
+.popup-buttons button {
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Copy button */
+.copy-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.copy-btn:hover {
+    background: #45a049;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Close button */
+.close-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.close-btn:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -55%) scale(0.95); }
+    to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.spinner {
+    margin: 20px auto; /* Centers horizontally */
+    display: block; /* Ensures it's a block element */
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
