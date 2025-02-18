@@ -1,0 +1,13 @@
+{
+    "name": "multiplayer-rock-paper-scissors",
+    "version": "1.0.0",
+    "description": "Multiplayer Rock Paper Scissors game with WebSockets",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "ws": "^8.13.0"
+    }
+  }
+  
