@@ -1,0 +1,101 @@
+* {
+    font-family: "Optima" !important;
+}
+
+.rock {
+    color: transparent;
+    background: url(./assets/rock.svg);
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+}
+
+.paper {
+    color: transparent;
+    background: url(./assets/paper.svg);
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+}
+
+.scissor {
+    color: transparent;
+    background: url(./assets/scissor.svg);
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+/* Sci-Fi Theme Styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: url('assets/sci-fi-bg.jpg') no-repeat center center/cover;
+    color: #0ff;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1, h2, p {
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Neon Button Style */
+.button {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+    transition: 0.3s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.8);
+}
+
+/* Menu Screen */
+#menu {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px cyan;
+}
+
+/* Game Area */
+#game, #ai-game {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px cyan;
+}
+
+/* Move Buttons */
+.move-btn {
+    background: linear-gradient(90deg, #ff0080, #8000ff);
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+    transition: 0.3s;
+}
+.move-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.8);
+}
